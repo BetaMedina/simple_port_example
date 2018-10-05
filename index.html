@@ -1,0 +1,212 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    
+    
+    
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="background">
+    <div class="nav col-8 col-sm-4 col-lg-4 col-md-4">
+    <a class="a active" href="#">Inicio</a>
+    <a class="b" href="#">Sobre Mim</a>
+    <a class="c" href="#">Portfólio</a>
+    <a class="d" href="#" onclick='contact()''>Contatos </a>
+    </div>
+    
+        <div class="container content">
+        <div class="home col-4 col-sm-4 col-lg-12 col-md-12">
+            <h1>João Pedro Medina</h1>
+            <h3>Desenvolvedor web e Mobile</h3>
+            </div>
+        <div class="about">
+            <div class=" caixa row col-12">
+                
+            <p>Desenvolvedor Full-stack<br>Dentre as linguagens que mais atuo<br>estão:</p>
+            
+            <img id="posi1" src="./img/php.png" width="30" height="30" class="d-inline-block align-top" alt="PHP">
+            
+            <img id="posi2" src="./img/js.png" width="30" height="30" class="d-inline-block align-top" alt="">
+
+          	<img id="posi3" src="./img/jquery.png" width="30" height="30" class="d-inline-block align-top" alt="">
+
+            <img id="posi4" src="./img/c.png" width="30" height="30" class="d-inline-block align-top" alt="">
+             <img id="posi5" src="./img/react.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                
+            </div>
+         
+                </div>
+            </div>
+
+            <div class="contact">
+ <div class="modal" tabindex="-1" role="dialog" id="modalCadastro">
+       <div class="modal-dialog" role="document"> 
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" style="color:black">Acione o bat-sinal <3 </h5>
+              </div>
+   <div class="modal-body">
+                        
+          <form class="form-horizontal" id="formProduto" action="/api/new-user" method="POST">
+                                                     
+           <div class="form-group row">
+               <label for="name" class="col-md-4 col-form-label text-md-right" style="color:black">Nome</label>
+                                
+                     <div class="col-md-6">
+                          <input id="name" type="text" class="form-control" name="name" style="color:black" value="" required autofocus>
+                              </div>
+             </div>
+                                
+           <div class="form-group row">
+                       <label for="age" class="col-md-4 col-form-label text-md-right" style="color:black">Idade</label>
+             <div class="col-md-6">
+       <input id="age" type="text" class="form-contro" name="age" style="color:black" required autofocus>
+           </span>
+                    </div>
+            </div>
+     <div class="form-group row">
+        <label for="email" class="col-md-4 col-form-label text-md-right" style="color:black">Email</label>
+         <div class="col-md-6">
+                 <input id="email" type="email" class="form-control" name="email" style="color:black" value="" required>
+                                
+                 </div>
+              </div>
+                 <div class="form-group row">
+            <label for="mensage" class="col-md-4 col-form-label text-md-right" style="color:black">Deixe um recado</label>
+                                    
+                                <div class="col-md-6">
+                        <textarea type="textarea" class="form-control" name="mensage" style="color:black" ></textarea>
+                                   </div>
+          </div>
+                                
+                    <div class="form-group row mb-0">
+                                    <div class="col-md-6 offset-md-4">
+                                   <button type="submit" class="btn btn-success" id="acao-enviar" name=".acao-enviar">
+                          Cadastrar
+                                    </button>
+                           <input type="button" value="Cancelar" class="btn btn-danger" onclick="closeModal()" />
+               
+                 </div>
+        </div>
+          </form>
+         </div>
+        </div>
+         </div>
+        </div>
+     </div>
+
+
+
+            <div class="galeria  col-sm-12 col-lg-12 col-md-8">
+                    <div id="diapo">
+                                <div>
+                                  <input type="radio" id="check_1" name="check" class="r_check" checked="checked">
+                                  <label for="check_1" class="on_check">
+                                    <img class="vignette" src="/img/about.jpg" alt="">
+                                  </label>
+                                  <img class="big_image"  src="/img/about.jpg" alt=""></div>
+                               
+                               <div>
+                                  <input type="radio" id="check_2" name="check" class="r_check">
+                                  <label for="check_2" class="on_check">
+                                    <img class="vignette"  src="/img/about.jpg" alt="">
+                                  </label>
+                                  <img class="big_image"  src="/img/about.jpg" alt=""></div>
+                               <div>
+                                  <input type="radio" id="check_3" name="check" class="r_check">
+                                  <label for="check_3" class="on_check">
+                                    <img class="vignette"  src="/img/about.jpg" alt="">
+                                  </label>
+                                  <img class="big_image"  src="/img/about.jpg" alt="">
+                                </div>
+                                  
+                              </div>
+    </div>
+        
+   
+
+ 
+    
+    
+    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    <script>
+    
+    $(document).ready(function(){
+        $('.about').hide('quickly');
+        $('.galeria').hide('quickly');
+        $('.contact').hide('quickly');
+        $('a').click(function(){
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+        
+       
+        var $a =$('.a'),
+            $b =$('.b'),
+            $c =$('.c'),
+            $d =$('.d'),
+            $home =$('.home'),
+            $about =$('.about'),
+            $galeria =$('.galeria'), 
+            $contact = $('.contact');     
+
+        
+        $a.click(function(){
+            $home.show('slow');
+             $contact.hide('slow');
+             $about.hide('slow');
+            $galeria.hide('slow');
+           
+        });
+         $b.click(function(){
+              $about.show('slow');
+              $home.hide('slow');
+          
+            $galeria.hide('slow');
+            $contact.hide('slow');
+    });
+
+      $d.click(function(){
+            $contact.show('slow');
+            $home.hide('slow');
+            $galeria.hide('slow');
+            $about.hide('slow');
+            
+    });
+
+
+         $c.click(function(){
+              $galeria.show('slow');
+             $about.hide('slow');
+            $contact.hide('slow');
+            $home.hide('slow');
+            
+         
+    });
+   
+     
+         });
+ function contact() {
+        $('#modalCadastro').modal('show');
+       }
+    
+    </script>
+    
+</body>
+</html>
